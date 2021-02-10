@@ -1,16 +1,37 @@
+body{
+    padding-top: 40px;
+    margin: 0px 0px 0px 0px;
+    background-color: lightgray;
+}
+
 .header
 {
     z-index: 9;
-    width: 100%
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid black;
 }
 
 .header .header-left a {
-    color: red;
-    padding: 1.5em;
+    color: black;
+    padding: 1.0em;
+}
+
+.content{
+    background-color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid black;
+    padding: 10px 10px 10px 10px;
 }
 
 p{
-
 }
 
 .flex-container{
