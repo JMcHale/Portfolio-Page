@@ -8,13 +8,9 @@
     padding: 1.5em;
 }
 
-p{
-
-}
-
 .flex-container{
     display: flex;
-    background-color: red;
+    background-color: blue;
     flex-wrap: wrap;
 }
 
