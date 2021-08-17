@@ -1,3 +1,3 @@
-This is a project for freecodecamp, attempting to use realistic workflows that one may use in an actual job.
+Development of my portfolio page - Using github and workflows associated with a professional environment as often as possible.
 
-A Gene Wilder tribute page, because he was an amazing and varied actor.
+Here's to learning and improving!
