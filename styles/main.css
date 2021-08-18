@@ -1,11 +1,14 @@
+
+
 .header
 {
     z-index: 9;
-    width: 100%;
+    width: 100vw;
+    height: 1.5em;
     background-color: blue;
     position: fixed;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 10px;
 }
 
 .header .header-left a {
@@ -13,15 +16,65 @@
     padding: 1.5em;
 }
 
+.header .header-right a {
+    color: black;
+    padding: 0.75em;
+}
+
+.spacer{
+    width: 100%;
+    height:2.5em;
+}
+
+.heading{
+    margin:0px;
+    padding:0px;
+    width: 100vw;
+    background-color: red;
+}
+
+.content{
+    margin :10px;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.flex-header{
+    display: flex;
+    width: 100vw;
+    background-color: orange;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-header-left{
+    background-color: purple;
+    flex: 1 3 50px;
+    padding: 0.5vw;
+}
+
+.flex-header-right{
+    background-color: green;
+    flex: 3 1 50px;
+    text-align: right;
+    margin: 0 1.5vw 0px 0px;
+    padding: 0.5vw;
+}
+
 .flex-container{
     display: flex;
     background-color: blue;
     flex-wrap: wrap;
+
 }
 
 .flex-container > div {
     background-color: grey;
     margin: 10px;
     padding: 250px;
+    width: 90vw;
     flex-wrap: wrap;
 }
