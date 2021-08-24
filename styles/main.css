@@ -15,6 +15,10 @@ p{
     padding:10px;
 }
 
+h2{
+    padding: 10px;
+}
+
 .header .header-left a {
     color: black;
     padding: 1.5em;
@@ -90,32 +94,33 @@ body{
     padding: 10px;
 }
 
-.flex-container{
+.projects-container{
     display: flex;
     background-color: lightgrey;
     flex-wrap: wrap;
-    padding:10px;
-
+    padding:0px;
+    margin: 0px;
 }
 
-.flex-container > div {
-    background-color: grey;
-    margin: 10px;
-    padding: 0px;
-    height: 100%;
-    width: auto;
-    flex-wrap: wrap;
+.indiv-projects-container{
+    display:flex;
+    flex-direction: row;
+    background-color: lightblue;
+    width:100%;
+    margin: 50px;
+    flex-wrap: nowrap;
 }
 
 .content-left{
     flex: 1 2 30vw;
-    margin: 0px;
-    padding: 10px;
+    margin: 10px;
+    padding: 0px;
 }
 .content-right{
+    background-color: lightgrey;
     flex: 2 1 65vw;
-    margin: 0px;
-    padding: 10px;
+    margin: 10px;
+    padding: 0px;
 }
 
 .imgres{
