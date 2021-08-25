@@ -1,4 +1,35 @@
+[data-tab-content]{
+    display:none;
+}
 
+.active[data-tab-content]{
+    display:block;
+}
+
+.tabs{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: start;
+    flex-direction:row;
+    background-color: red;
+}
+
+.tab{
+    cursor: pointer;
+    margin: 0;
+    padding: 20px;
+}
+
+.tab:hover{
+    background-color: green;
+}
+
+.tab.active{
+    background-color:lightgrey;
+}
 
 .header
 {

@@ -6,6 +6,11 @@
         <meta name = "description" content="A portfolio of Joseph McHale's work in the coding/tech word. My aims, achievements, and general musings in the world of tech."/>
         <meta name = viewport content="width=device-width, initial-scale=1" />
         <meta name = "robots" content="index, follow"/>
+
+        <!--javascript for clickable tabs-->
+        <script src="scripts/script.js" defer></script>
+
+        <!--links html to the css stylesheet, shows it where to look-->
         <link rel=StyleSheet href="styles/main.css" type="text/css" media=all>
     </head>
 <body>
@@ -34,42 +39,89 @@
                 </p>
             </div>
         </div>
+        <div">
+            <ul class = "tabs">
+                <li data-tab-target="#software-projects" class="tab">Software Projects</li>
+                <li data-tab-target="#hardware-projects" class="tab">Hardware Projects</li>
+            </ul>
+        </div>
         <div class="projects-container">
-            <div class="indiv-projects-container">
-                <div class="content-left">
-                    <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+            <div id="software-projects" data-tab-content class="active">
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class="content-right">
+                        <h2>
+                            Project 1
+                        </h2>
+                        <p>
+                            Don't look, it's awful. Please don't. Ew.
+                        </p>
+                    </div>
                 </div>
-                <div class="content-right">
-                    <h2>
-                        Project 1
-                    </h2>
-                    <p>
-                        Don't look, it's awful. Please don't. Ew.
-                    </p>
+                <div class="indiv-projects-container">
+                    <div class="content-left"><img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty 2"></div>
+                    <div class="content-right">
+                        <h2>
+                            Project 2
+                        </h2>
+                        <p>
+                            And so, sad. All the wine is gone. Where is rum? Did you set fire to the rum???
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class = "content-right">
+                        <h2>
+                            Project 3
+                        </h2>
+                        <p>
+                            And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="indiv-projects-container">
-                <div class="content-left"><img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty 2"></div>
-                <div class="content-right">
-                    <h2>
-                        Project 2
-                    </h2>
-                    <p>
-                        And so, sad. All the wine is gone. Where is rum? Did you set fire to the rum???
-                    </p>
+            <div id="hardware-projects" data-tab-content>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class="content-right">
+                        <h2>
+                            Hardware Project 1
+                        </h2>
+                        <p>
+                            Don't look, it's awful. Please don't. Ew.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="indiv-projects-container">
-                <div class="content-left">
-                    <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                <div class="indiv-projects-container">
+                    <div class="content-left"><img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty 2"></div>
+                    <div class="content-right">
+                        <h2>
+                            Hardware Project 2
+                        </h2>
+                        <p>
+                            And so, sad. All the wine is gone. Where is rum? Did you set fire to the rum???
+                        </p>
+                    </div>
                 </div>
-                <div class = "content-right">
-                    <h2>
-                        Project 3
-                    </h2>
-                    <p>
-                        And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
-                    </p>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class = "content-right">
+                        <h2>
+                            Hardware Project 3
+                        </h2>
+                        <p>
+                            And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
