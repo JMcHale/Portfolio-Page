@@ -1,53 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>A Gene Wilder Tribute Page</title>
+        <title>Joseph McHale Portfolio</title>
         <meta charset = "utf-8" />
-        <meta name = "description" content="A tribute page for the amazing gene Wilder, a test project for aspiring coder Joseph McHale"/>
+        <meta name = "description" content="A portfolio of Joseph McHale's work in the coding/tech word. My aims, achievements, and general musings in the world of tech."/>
         <meta name = viewport content="width=device-width, initial-scale=1" />
         <meta name = "robots" content="index, follow"/>
+
+        <!--javascript for clickable tabs-->
+        <script src="scripts/script.js" defer></script>
+
+        <!--links html to the css stylesheet, shows it where to look-->
         <link rel=StyleSheet href="styles/main.css" type="text/css" media=all>
     </head>
 <body>
     <div class="heading">
         <div class="header flex-header">
             <div class="header-left flex-header-left">
-                <a href="https://codepen.io/JMcHale/pen/oNYvjxY">Joseph McHale</a>
+                <a href="https://josephmchale.me">Joseph McHale</a>
             </div>
             <div class="header-right flex-header-right">
-                <a href="Link 1">Link 1</a>
-                <a href="Link 2">Link 2</a>
+                <a href="https://github.com/JMcHale">Github</a>
+                <a href="http://linkedin.com/in/joseph-f-mchale">Linkedin</a>
             </div>
         </div> 
         <div class="spacer">
     
         </div> 
     </div>
-    <div class="content">
-        <p>
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-        </p>
-        <p>
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-        </p>
-        <p>
-            "Here goes the third paragraph!"
-        </p>
-        <p>
-            "Oh look another edit!"
-        </p>
-        <p>
-            "In this branch we will test various HTML changes"
-        </p>
-        <div class="flex-container">
-            <div>Area 1</div>
-            <div>Area 2</div>
-            <div>Area 3</div>
-            <div>Area 4</div>
-            <div>Area 5</div>
-            <div>Area 6</div>
+
+        <div class="intro">
+            <div class="intro-pic">
+                <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+            </div>
+            <div class="intro-text">
+                <p>
+                    "I'm someone interested and experimenting in all things coding, seeing what I can do, what's possible, and if I'm any good at it. Hah."
+                </p>
+            </div>
         </div>
-    </div>
+        <div">
+            <ul class = "tabs">
+                <li data-tab-target="#software-projects" class="tab">Software Projects</li>
+                <li data-tab-target="#hardware-projects" class="tab">Hardware Projects</li>
+            </ul>
+        </div>
+        <div class="projects-container">
+            <div id="software-projects" data-tab-content class="active">
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class="content-right">
+                        <h2>
+                            Project 1
+                        </h2>
+                        <p>
+                            Don't look, it's awful. Please don't. Ew.
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left"><img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty 2"></div>
+                    <div class="content-right">
+                        <h2>
+                            Project 2
+                        </h2>
+                        <p>
+                            And so, sad. All the wine is gone. Where is rum? Did you set fire to the rum???
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class = "content-right">
+                        <h2>
+                            Project 3
+                        </h2>
+                        <p>
+                            And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="hardware-projects" data-tab-content>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class="content-right">
+                        <h2>
+                            Hardware Project 1
+                        </h2>
+                        <p>
+                            Don't look, it's awful. Please don't. Ew.
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left"><img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty 2"></div>
+                    <div class="content-right">
+                        <h2>
+                            Hardware Project 2
+                        </h2>
+                        <p>
+                            And so, sad. All the wine is gone. Where is rum? Did you set fire to the rum???
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class = "content-right">
+                        <h2>
+                            Hardware Project 3
+                        </h2>
+                        <p>
+                            And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 </body>
+<footer>
+    <div class = "footer">
+        <p>
+            Joseph McHale, 2021
+        </p>
+    </div>
+</footer>
 </html>
 
