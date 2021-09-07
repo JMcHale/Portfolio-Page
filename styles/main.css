@@ -14,7 +14,7 @@
     display: flex;
     justify-content: start;
     flex-direction:row;
-    background-color: #745296;
+    background-color: #FF4E5B;
 }
 
 .tab{
@@ -84,7 +84,7 @@ body{
 .flex-header{
     display: flex;
     width: 100%;
-    background-color: #028090;
+    background-color: #D8D8D8;
     justify-content:center;
     align-items:center;
 }
@@ -96,7 +96,7 @@ body{
 }
 
 .flex-header-right{
-    background-color: #D8D8D8;
+    background-color: white;
     flex: 3 1 50px;
     text-align: right;
     margin: 0 1.5vw 0px 0px;
@@ -106,7 +106,7 @@ body{
 .intro{
     display: flex;
     width: 100%;
-    background-color: #D8D8D8;
+    background-color:white;
     padding: 0px;
     overflow: hidden;
 
@@ -119,7 +119,7 @@ body{
 }
 
 .intro-text{
-    background-color: #FF5E5B;
+    background-color: #D8D8D8;
     flex: 2 1 50px;
     margin: 30px;
     padding: 10px;
@@ -136,7 +136,7 @@ body{
 .indiv-projects-container{
     display:flex;
     flex-direction: row;
-    background-color: lightblue;
+    background-color: #745296;
     width:100%;
     margin: 0px;
     padding: 0px;
