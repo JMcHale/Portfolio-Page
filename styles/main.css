@@ -21,6 +21,8 @@
     cursor: pointer;
     margin: 0;
     padding: 20px;
+    border-style: solid;
+    border-width: medium;
 }
 
 .tab:hover{
@@ -40,6 +42,9 @@
     position: fixed;
     margin: 0px 0px 0px 0px;
     padding: 10px;
+    border-style: none none solid;
+    border-width: medium;
+    border-color: white;
 }
 
 p{
@@ -123,6 +128,7 @@ body{
     flex: 2 1 50px;
     margin: 30px;
     padding: 10px;
+    border-radius: 20px;
 }
 
 .projects-container{
@@ -153,6 +159,7 @@ body{
     flex: 2 1 65vw;
     margin: 30px;
     padding: 0px;
+    border-radius: 12px;
 }
 
 .imgres{
