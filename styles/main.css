@@ -14,7 +14,7 @@
     display: flex;
     justify-content: start;
     flex-direction:row;
-    background-color: red;
+    background-color: #745296;
 }
 
 .tab{
@@ -24,11 +24,11 @@
 }
 
 .tab:hover{
-    background-color: green;
+    background-color: #028090;
 }
 
 .tab.active{
-    background-color:lightgrey;
+    background-color: #439775;
 }
 
 .header
@@ -84,19 +84,19 @@ body{
 .flex-header{
     display: flex;
     width: 100%;
-    background-color: lightgrey;
+    background-color: #028090;
     justify-content:center;
     align-items:center;
 }
 
 .flex-header-left{
-    background-color: lightblue;
+    background-color: #FF4E5B;
     flex: 1 3 50px;
     padding: 0.5vw;
 }
 
 .flex-header-right{
-    background-color: lightgreen;
+    background-color: #D8D8D8;
     flex: 3 1 50px;
     text-align: right;
     margin: 0 1.5vw 0px 0px;
@@ -106,7 +106,7 @@ body{
 .intro{
     display: flex;
     width: 100%;
-    background-color: grey;
+    background-color: #D8D8D8;
     padding: 0px;
     overflow: hidden;
 
@@ -119,7 +119,7 @@ body{
 }
 
 .intro-text{
-    background-color: lightblue;
+    background-color: #FF5E5B;
     flex: 2 1 50px;
     margin: 30px;
     padding: 10px;
@@ -149,7 +149,7 @@ body{
     padding: 0px;
 }
 .content-right{
-    background-color: lightgrey;
+    background-color: #D8D8D8;
     flex: 2 1 65vw;
     margin: 30px;
     padding: 0px;
