@@ -15,14 +15,14 @@
     justify-content: start;
     flex-direction:row;
     background-color: #FF4E5B;
+    border-style: solid;
+    border-width: medium;
 }
 
 .tab{
     cursor: pointer;
     margin: 0;
     padding: 20px;
-    border-style: solid;
-    border-width: medium;
 }
 
 .tab:hover{
