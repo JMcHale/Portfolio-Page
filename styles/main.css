@@ -17,6 +17,7 @@
     background-color: #A7C7E7;
     border-style: solid;
     border-width: medium;
+    font-size: 24px;
 }
 
 .tab{
@@ -49,12 +50,16 @@
 
 p{
     padding:10px;
+    font-size: 20px;
 }
 
 h2{
     margin:0px;
     padding: 0px;
     text-align: center;
+    font-family: Permanent Marker;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 .header .header-left a {
@@ -92,7 +97,7 @@ body{
 .flex-header{
     display: flex;
     width: 100%;
-    background-color: #D8D8D8;
+    background-color: white;
     justify-content:center;
     align-items:center;
 }
@@ -190,21 +195,26 @@ body{
     text-align: center;
 }
 
+.title{
+    font-family: Permanent Marker;
+    text-decoration: none;
+}
+
 
 /*One column breakpoint*/
-@media (max-width:1024px){
+@media (max-width:824px){
     p{
-        font-size:12px;
+        font-size:16px;
     }
 
     h2{
-        font-size:20px;
+        font-size:24px;
     }
 
     .indiv-projects-container{
         display:flex;
         flex-direction: column;
-        background-color: #745296;
+        background-color: #C3B1E1;
         width:100%;
         margin: 0px;
         padding: 0px;
