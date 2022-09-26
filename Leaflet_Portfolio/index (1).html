@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Permanent%20Marker" rel="stylesheet" type="text/css">
+<html lang="en">
+    <head>
+        <title>Joseph McHale Portfolio</title>
+        <meta charset = "utf-8" />
+        <meta name = "description" content="A portfolio of Joseph McHale's work in the coding/tech word. My aims, achievements, and general musings in the world of tech."/>
+        <meta name = viewport content="width=device-width, initial-scale=1" />
+        <meta name = "robots" content="index, follow"/>
+
+        <!--javascript for clickable tabs-->
+        <script src="scripts/script.js" defer></script>
+
+        <!--links html to the css stylesheet, shows it where to look-->
+        <link rel=StyleSheet href="styles/main.css" type="text/css" media=all>
+        
+        <!-- Leaflet code -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+       crossorigin="">
+        </script>
+    </head>
+<body>
+    <div class="heading">
+        <div class="header flex-header">
+            <div class="header-left flex-header-left">
+                <a href="https://josephmchale.me" class="title">Joseph McHale Portfolio</a>
+            </div>
+            <div class="header-right flex-header-right">
+                <a href="https://github.com/JMcHale"><img src="images/github_logo.png" class="imglogo" alt="Github Logo"></a>
+                <a href="http://linkedin.com/in/joseph-f-mchale"><img src="images/linkedin_logo.png" class="imglogo" alt="Linkedin Logo"></a>
+            </div>
+        </div> 
+        <div class="spacer">
+    
+        </div> 
+    </div>
+    
+        <!-- Test leaflet map from https://leafletjs.com/examples/quick-start/-->
+        <!--
+        <div id="map"></div>
+        <script>
+        	var map = L.map('map').setView([51.505, -0.09], 13);
+        	
+            var marker = L.marker([51.5, -0.09]).addTo(map);
+            marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+            
+            var popup = L.popup()
+            .setLatLng([51.513, -0.09])
+            .setContent("I am a standalone popup.")
+            .openOn(map);
+            
+        	var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        		maxZoom: 18,
+        		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+        			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        		id: 'mapbox/streets-v11',
+        		tileSize: 512,
+        		zoomOffset: -1
+        	}).addTo(map);
+        </script>
+        -->
+        
+        <!-- Test game map from custom image -->
+        <div id="map"></div>
+        <script>
+        <!--Listing Layers that can be controlled on the map-->
+        var cities = L.layerGroup();
+        
+        <!--Creating map co-ordinate system-->
+        var map = L.map('map', {
+            crs: L.CRS.Simple,
+            minZoom: -1,
+            maxZoom: 3,
+        });
+        
+        <!-- Adding markers -->
+        var marker = L.marker([250, 250]).addTo(cities);
+            marker.bindPopup("<b>Hello world!</b><br>I am a Wilson.").openPopup();
+        var marker2 = L.marker([300, 400]).addTo(cities);
+            marker2.bindPopup("<b>Hello world!</b><br>I am a Wilson Too.").openPopup();
+        var marker3 = L.marker([100, 20]).addTo(cities);
+            marker3.bindPopup("<b>Hello world!</b><br>I am a Wilson.").openPopup();
+        var marker4 = L.marker([250, 120]).addTo(cities);
+            marker4.bindPopup("<b>Hello world!</b><br>I am a Wilson.").openPopup();
+            
+        var bounds = [[0,0], [500,500]];
+        
+        <!--Adding background image (gamemap)-->
+        var image = L.imageOverlay('images/Elden Test Map.jpg', bounds).addTo(map);
+        
+        var overlayMaps = {"Cities": cities};
+        
+        <!--Creates layer control for user-->
+        L.control.layers(null, overlayMaps).addTo(map);
+        
+        var overlayMaps = {
+            "<span style='color: blue'>Cities</span>": cities};
+        
+        map.fitBounds(bounds);
+        
+        layers: cities;
+        </script>
+        
+        
+        <div class="intro">
+            <div class="intro-pic">
+                <img src="images/Design.png" class="imgres" alt="Profile Picture">
+            </div>
+            <div class="intro-text">
+                <h2>
+                    Intro
+                </h2>
+                <p>
+                    "I'm someone interested in learning and forever improving. My background is in Chemical Engineering and Project Management, specialising in the continual improvement of processes, removing waste and ensuring lean and efficient production. Something I aim to bring to everything I do."
+                </p>
+                <p>
+                    <b>Qualifications:</b> MEng Chemical Engineering, PRINCE2 Practitioner, Lean Six Sigma
+                </p>
+                <p>
+                    <b>Strengths:</b> Passionate about learning and improving
+                </p>
+                <p>
+                    <b>Weaknesses:</b> Finds everything interesting
+                </p>
+                <p>
+                    Favourite Quote: <i>Hello World!;</i>
+                </p>
+            </div>
+        </div>
+        <div">
+            <ul class = "tabs">
+                <li data-tab-target="#software-projects" class="tab active"><b>Software Projects</b></li>
+                <li data-tab-target="#hardware-projects" class="tab"><b>Hardware Projects</b></li>
+                <li data-tab-target="#articles" class="tab">Articles</li>
+            </ul>
+        </div>
+        <div class="projects-container">
+            <div id="software-projects" data-tab-content class="active">
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/TryRolling.png" class="imgres" alt="The TryRolling Website">
+                    </div>
+                    <div class="content-right">
+                        <h2>
+                            <a href="https://tryrolling.com" target="_blank">TryRolling Website</a>
+                        </h2>
+                        <p>
+                            Wrote for and developed the TryRolling website, which is still in use. Used wordpress and the genesis framework, customising and adapting HTML and CSS as needed. SEO and content marketing was a large part of this, as a writer for the site while developing it.
+                        </p>
+                        <p>
+                           Technologies used: <b>HTML, CSS, Wordpress</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left"><img src="images/Scratch.png" class="imgres" alt="A wonderful kitty 2"></div>
+                    <div class="content-right">
+                        <h2>
+                            CS50 Scratch Project
+                        </h2>
+                        <p>
+                            Scratch project of a little game where the player must eat as many trucks as possible.
+                        </p>
+                        <p>
+                            Technologies used: <b>Scratch</b>
+                         </p>
+                        <iframe id="app" src="https://scratch.mit.edu/projects/573997366/embed" allowtransparency="true"  style="" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class = "content-right">
+                        <h2>
+                            Project 3
+                        </h2>
+                        <p>
+                            And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="hardware-projects" data-tab-content>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class="content-right">
+                        <h2>
+                            Hardware Project 1
+                        </h2>
+                        <p>
+                            Don't look, it's awful. Please don't. Ew.
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left"><img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty 2"></div>
+                    <div class="content-right">
+                        <h2>
+                            Hardware Project 2
+                        </h2>
+                        <p>
+                            And so, sad. All the wine is gone. Where is rum? Did you set fire to the rum???
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class = "content-right">
+                        <h2>
+                            Hardware Project 3
+                        </h2>
+                        <p>
+                            And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="articles" data-tab-content>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class="content-right">
+                        <h2>
+                            Article 1
+                        </h2>
+                        <p>
+                            Don't look, it's awful. Please don't. Ew.
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left"><img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty 2"></div>
+                    <div class="content-right">
+                        <h2>
+                            Article 2
+                        </h2>
+                        <p>
+                            And so, sad. All the wine is gone. Where is rum? Did you set fire to the rum???
+                        </p>
+                    </div>
+                </div>
+                <div class="indiv-projects-container">
+                    <div class="content-left">
+                        <img src="images/kitty1.jpg" class="imgres" alt="A wonderful kitty">
+                    </div>
+                    <div class = "content-right">
+                        <h2>
+                            Article 3
+                        </h2>
+                        <p>
+                            And so here we lie at the bottom of the page. Devastated it's all over. One day, we may return. But it is not this day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<footer>
+    <div class = "footer">
+        <p>
+            Joseph McHale, 2021
+        </p>
+    </div>
+</footer>
+</html>
